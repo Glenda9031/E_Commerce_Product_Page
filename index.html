@@ -12,13 +12,49 @@
   <title>Frontend Mentor | E-commerce product page</title>
 </head>
 <body>
+    <nav class="d-flex">
+      <div data-sidebar="sidebar" class="mobileSidebar d-none">
+        <img src="./images/icon-close.svg" data-closeSidebar="closeSidebar" class="close">
+        <ul>
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+      <div class="d-flex gap">
+        <img src="./images/icon-menu.svg" data-openSidebar="openSidebar" class="menu">
+        <img src="./images/logo.svg" alt="logo">
+        <ul class="d-flex gap desktopCta">
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
 
+      <div class="strong d-flex gap">
+        <span data-cart="cart" class="d-flex cart">
+          <img src="./images/icon-cart.svg" alt="cart" class="cart">
+          <strong data-totalItems="totalItems" class="number">0</strong>
+        </span>
+        <img src="./images/image-avatar.png" alt="avatar" class="avatar">
+      </div>
+    </nav>
+
+    <section class="basket d-none" data-basket="basket">
+      <h4>Cart</h4>
+      <hr>
+      <div class="filledOrEmpty d-flex">
+        <div class="d-none">
+          
+        </div>
+      </div>
+    </section>
+  
   Sneaker Company
 
   Fall Limited Edition Sneakers
