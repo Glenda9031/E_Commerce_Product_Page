@@ -14,6 +14,7 @@
   --dark-grayish-blue: hsl(219, 9%, 45%);
   --grayish-blue: hsl(220, 14%, 75%);
   --light-grayish-blue: hsl(223, 64%, 98%);
+  --red: hsl(0, 100%, 50%);
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);  
 }
@@ -116,9 +117,213 @@ nav .strong span {
   justify-content: center;
 }
 
+.basket .filledOrEmpty .empty {
+  text-align: center;
+}
 
+.basket .filledOrEmpty div .filled {
+  gap: 1.25rem;
+}
 
+.basket .filledOrEmpty div .cartImage {
+  width: 3.725rem;
+  border-radius: 0.625rem;
+}
 
+.basket .filledOrEmpty div .checkout {
+  padding: 0.75rem;
+  width: 100%;
+  background-color: var(--orange);
+  border-radius: 0.425rem;
+}
 
+main {
+  justify-content: space-between;
+  padding: 0.75rem 5%;
+  margin: 4rem 0;
+  gap: 8rem;
+}
 
+section,
+header {
+  width: 50%;
+}
+
+.banner img {
+  margin-bottom: 1rem;
+}
+
+.thumbnail {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.thumbnail img {
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.thumbnail img:active {
+  transform: scale(110%);
+  transition: 0.5s;
+}
+
+.thumbnail img:hover {
+  filter: contrast(70%) brightness(120%);
+}
+
+header .companyName {
+  text-transform: uppercase;
+}
+
+header h1 {
+  font-size: 2.75rem;
+  line-height: 1;
+  margin: 0.75rem 0;
+}
+
+header .productAbout {
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+header .priceTag p strong {
+  font-size: 1.75rem;
+}
+
+header .priceTag p span {
+  padding: 0.2rem 0.45rem;
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: .3125rem;
+  margin: 0 0 0 0.75rem;
+}
+
+.productQuantity {
+  margin: 2rem 0 0 0;
+  justify-content: space-between;
+}
+
+.productQuantity .toggleQuantity {
+  background-color: var(--light-grayish-blue);
+  width: 40%;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+}
+
+.productQuantity .toggleQuantity button {
+  padding: 1rem;
+}
+
+.productQuantity .purchase {
+  width: 50%;
+  background-color: var(--orange);
+  padding: 0.85rem;
+  border-radius: 0.5rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.discount {
+  text-decoration: line-through;
+}
+
+.close,
+.menu {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: unset;
+}
+
+.borderRadius {
+  border-radius: 1rem;
+}
+
+.width {
+  width: 100%;
+}
+
+.gap {
+  gap: 1.5rem;
+}
+
+.d-flex {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.d-none,
+.menu {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+@media (max-width: 56.25rem) {
+  body {
+    width: 100%;
+  }
+
+  .avatar {
+    width: 40%;
+  }
+
+  .desktopCta {
+    display: none;
+  }
+
+  .basket {
+    width: 90%;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  main {
+    flex-direction: column;
+    margin: 2rem 0;
+    gap: 3rem;
+  }
+
+  section,
+  header {
+    width: 100%;
+  }
+
+  .priceTag {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .productQuantity {
+    flex-direction: column;
+  }
+
+  .productQuantity .toggleQuantity,
+  .productQuantity .purchase {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .borderRadius {
+    border-radius: 0.5rem;
+  }
+}
 
